@@ -18,6 +18,11 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0; /* Ensure there's no default margin */
+  padding: 0; /* Ensure there's no default padding */
+  height: 100vh; /* Make sure the body takes the full viewport height */
+  width: 100vw; /* Make sure the body takes the full viewport width */
+  overflow: hidden; /* Prevent scrolling if you want the background to be strictly fullscreen */
 }
 
 @layer utilities {

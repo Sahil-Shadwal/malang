@@ -8,12 +8,12 @@ const SelectionResult = () => {
   const [result, setResult] = useState<boolean | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
 
-  // ... existing selectedCandidates array ...
   const selectedCandidates = [
     { name: "John Doe", prn: "12345" },
     { name: "Jane Smith", prn: "67890" },
     // Add more selected candidates here
   ];
+
   const handleCheck = () => {
     const isSelected = selectedCandidates.some(
       (candidate) =>
@@ -28,10 +28,10 @@ const SelectionResult = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 to-purple-100 flex items-center justify-center p-4">
+    <div className="min-h-screen bg-black flex items-center justify-center p-4">
       {showConfetti && <Confetti />}
-      <div className="w-full max-w-md bg-white p-8 rounded-xl shadow-lg">
-        <h1 className="text-3xl font-bold text-center mb-8 text-gray-800">
+      <div className="w-full max-w-md bg-gray-800 p-8 rounded-xl shadow-lg">
+        <h1 className="text-3xl font-bold text-center mb-8 text-white">
           Club Recruitment Results
         </h1>
 
@@ -41,7 +41,7 @@ const SelectionResult = () => {
             placeholder="Enter your name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full px-4 py-3 text-black rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
+            className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
           />
 
           <input
@@ -49,7 +49,7 @@ const SelectionResult = () => {
             placeholder="Enter your PRN"
             value={prn}
             onChange={(e) => setPrn(e.target.value)}
-            className="w-full text-black px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
+            className="w-full px-4 py-3 rounded-lg bg-gray-700 text-white border-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
           />
 
           <button
@@ -63,7 +63,7 @@ const SelectionResult = () => {
         {result !== null && (
           <div
             className={`mt-6 p-6 rounded-lg ${
-              result ? "bg-green-100 text-green-800" : "bg-red-100 text-red-800"
+              result ? "bg-green-800 text-green-100" : "bg-red-800 text-red-100"
             }`}
           >
             <h2 className="text-2xl font-bold text-center mb-3">
