@@ -12,6 +12,7 @@ const SelectionResult = () => {
 
   const selectedCandidates = [
     { name: "Aadya Paradkar", branch: "IT" },
+    { name: "Saumya Suman", branch: "ENTC" },
     { name: "Aaradhaya Bansal", branch: "Robotics" },
     { name: "Ankit yadav", branch: "CSE" },
     { name: "Anushka Shivhare", branch: "CE" },
