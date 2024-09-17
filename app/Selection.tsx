@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Confetti from "react-confetti";
 import { Meteors } from "../components/ui/meteors";
+import { BackgroundLines } from "@/components/ui/background-lines";
 
 const SelectionResult = () => {
   const [name, setName] = useState("");
@@ -29,14 +30,14 @@ const SelectionResult = () => {
   };
 
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center p-4">
+    <BackgroundLines className="min-h-screen bg-black flex items-center justify-center p-4">
       {showConfetti && <Confetti />}
-      <div className="w-full max-w-md bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg relative overflow-hidden">
-        <h1 className="text-3xl font-bold text-center mb-8 text-white relative z-10">
+      <div className="w-full max-w-md bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg relative z-10 overflow-hidden">
+        <h1 className="text-3xl font-bold text-center mb-8 text-white relative z-20">
           Club Recruitment Results
         </h1>
 
-        <div className="space-y-6 mb-6 relative z-10">
+        <div className="space-y-6 mb-6 relative z-20">
           <input
             type="text"
             placeholder="Enter your name"
@@ -63,7 +64,7 @@ const SelectionResult = () => {
 
         {result !== null && (
           <div
-            className={`mt-6 p-6 rounded-lg relative z-10 ${
+            className={`mt-6 p-6 rounded-lg relative z-20 ${
               result ? "bg-green-800/70" : "bg-red-800/70"
             } backdrop-blur-sm`}
           >
@@ -80,7 +81,7 @@ const SelectionResult = () => {
 
         <Meteors number={20} />
       </div>
-    </div>
+    </BackgroundLines>
   );
 };
 
