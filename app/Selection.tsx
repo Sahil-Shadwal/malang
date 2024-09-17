@@ -30,8 +30,9 @@ const SelectionResult = () => {
   };
 
   return (
-    <BackgroundLines className="min-h-screen bg-black flex items-center justify-center p-4">
+    <BackgroundLines className="relative z-10 p-4">
       {showConfetti && <Confetti />}
+
       <div className="w-full max-w-md bg-gray-800/50 backdrop-blur-sm p-8 rounded-xl shadow-lg relative z-10 overflow-hidden">
         <h1 className="text-3xl font-bold text-center mb-8 text-white relative z-20">
           Club Recruitment Results
