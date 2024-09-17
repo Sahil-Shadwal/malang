@@ -80,7 +80,7 @@ const SelectionResult = () => {
 
           <input
             type="text"
-            placeholder="Enter your Branch"
+            placeholder="Enter your Branch (IT/ECE/ENTC/CSE..)"
             value={branch}
             onChange={(e) => setBranch(e.target.value)}
             className="w-full px-4 py-3 rounded-lg bg-gray-700/70 text-white border-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
