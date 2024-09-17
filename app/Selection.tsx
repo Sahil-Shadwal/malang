@@ -6,7 +6,7 @@ import { BackgroundLines } from "@/components/ui/background-lines";
 
 const SelectionResult = () => {
   const [name, setName] = useState("");
-  const [prn, setPrn] = useState("");
+  const [branch, setBranch] = useState("");
   const [result, setResult] = useState<boolean | null>(null);
   const [showConfetti, setShowConfetti] = useState(false);
 
@@ -50,7 +50,7 @@ const SelectionResult = () => {
     const isSelected = selectedCandidates.some(
       (candidate) =>
         candidate.name.toLowerCase() === name.toLowerCase() &&
-        candidate.prn === prn
+        candidate.branch.toLowerCase() === branch.toLowerCase()
     );
     setResult(isSelected);
     if (isSelected) {
@@ -80,9 +80,9 @@ const SelectionResult = () => {
 
           <input
             type="text"
-            placeholder="Enter your PRN"
-            value={prn}
-            onChange={(e) => setPrn(e.target.value)}
+            placeholder="Enter your Branch"
+            value={branch}
+            onChange={(e) => setBranch(e.target.value)}
             className="w-full px-4 py-3 rounded-lg bg-gray-700/70 text-white border-none focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300"
           />
 
