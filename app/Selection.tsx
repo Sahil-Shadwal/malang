@@ -11,9 +11,39 @@ const SelectionResult = () => {
   const [showConfetti, setShowConfetti] = useState(false);
 
   const selectedCandidates = [
-    { name: "John Doe", prn: "12345" },
-    { name: "Jane Smith", prn: "67890" },
-    // Add more selected candidates here
+    { name: "Aadya Paradkar", branch: "IT" },
+    { name: "Aaradhaya Bansal", branch: "Robotics" },
+    { name: "Ankit yadav", branch: "CSE" },
+    { name: "Anushka Shivhare", branch: "CE" },
+    { name: "Anushka Shree", branch: "CSE" },
+    { name: "Arya verma", branch: "IT" },
+    { name: "Bhagyashri Pawar", branch: "ECE" },
+    { name: "Gaurav Kumar", branch: "CE" },
+    { name: "Harshit Rajeev Nayan", branch: "ECE" },
+    { name: "Misty Ranjan", branch: "CSE" },
+    { name: "Nandini Iyer", branch: "ECE" },
+    { name: "Riddhi Jagdale", branch: "IT" },
+    { name: "Tanishka Suresh Potre", branch: "IT" },
+    { name: "Ayush Sarda", branch: "ENTC" },
+    { name: "Shubham Deep Singh", branch: "ECE" },
+    { name: "Ashhar Sayeed", branch: "ENTC" },
+    { name: "Sourabh Tanwar", branch: "ECE" },
+    { name: "Siddhi Choudhary", branch: "CE" },
+    { name: "Sakshi Parashar", branch: "CE" },
+    { name: "Astitva Keshari", branch: "IT" },
+    { name: "Kaif Khan", branch: "ENTC" },
+    { name: "Sachin Swaraj", branch: "ENTC" },
+    { name: "Manoviraj Sharma", branch: "ECE" },
+    { name: "Rishika Rani", branch: "CSBS" },
+    { name: "Shivam Kumar Jha", branch: "ECE" },
+    { name: "Pankaj Santosh Kumar", branch: "CSE" },
+    { name: "Rajal Mistry", branch: "CSBS" },
+    { name: "Prajwal", branch: "ECE" },
+    { name: "Pranav Kumar", branch: "CSE" },
+    { name: "Adnan Shaikh", branch: "Civil" },
+    { name: "Viresh Rai", branch: "ENTC" },
+    { name: "Shubh Vashishtha", branch: "CSBS" },
+    { name: "Ashish", branch: "CSBS" },
   ];
 
   const handleCheck = () => {
