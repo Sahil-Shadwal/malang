@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import Confetti from "react-confetti";
 import { Meteors } from "../components/ui/meteors";
 import { BackgroundLines } from "@/components/ui/background-lines";
-import Image from "next/image";
 
 const SelectionResult = () => {
   const [name, setName] = useState("");
