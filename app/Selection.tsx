@@ -122,7 +122,7 @@ const SelectionResult = () => {
             </h2>
             <p className="text-center text-lg text-white">
               {result
-                ? "You have been selected to join our club!"
+                ? "You've been selected for Round II! Join the WhatsApp group for further updates."
                 : "You were not selected this time. Please try again next year."}
             </p>
             {showWhatsAppButton && (
